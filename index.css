@@ -4,6 +4,7 @@
 
 html,
 body {
+  font-family: Poppins;
   margin: 0;
   padding: 0;
   height: 100%;
@@ -12,7 +13,6 @@ body {
 }
 
 body {
-  background-color: aqua;
   /* align-items: center; */
   /* flex-direction: column; */
   border: 2px solid green;
@@ -20,7 +20,7 @@ body {
 
 .container {
   margin: auto;
-  width: 90%;
+  width: 80%;
   display: grid;
   border: 2px solid red;
   height: 100vh;
@@ -37,14 +37,28 @@ body {
 }
 
 .item {
-  align-self: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   height: 500px;
   border: 2px solid blue;
 }
 
+.space-between {
+  justify-content: space-around;
+}
+
 .card {
-  width: 80%;
-  height: 200px;
+  border-radius: 20px;
+  width: 90%;
+  height: 220px;
   border: 2px solid maroon;
   place-items: calc;
+}
+
+@media only screen and (max-width: 375px) {
+  .container {
+    display: -ms-inline-grid;
+  }
 }
