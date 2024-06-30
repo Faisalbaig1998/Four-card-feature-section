@@ -20,11 +20,12 @@ body {
 
 .container {
   margin: auto;
+  justify-content: center;
   align-items: center;
   width: 80%;
   display: grid;
-  border: 2px solid red;
-  height: 100%;
+  /* border: 2px solid red; */
+  /* height: 100%; */
   gap: 20px;
 }
 
