@@ -60,7 +60,7 @@ body {
   padding: 20px;
   border-radius: 10px;
   width: 320px;
-  height: 235px;
+  height: 225px;
   /* border: 2px solid black; */
   overflow: hidden;
   box-shadow: 5px 5px 30px rgb(205, 205, 205);
@@ -102,15 +102,30 @@ body {
 }
 
 .card-img {
-  width: 50px;
+  /* position: absolute; */
+  /* right: 20px; */
+  float: right;
+  width: 60px;
   height: auto;
 }
 
-.card > p{
+.card > p {
   font-size: 15px;
-  color : hsl(229, 6%, 66%);
+  color: hsl(229, 6%, 66%);
 }
 
-.card > h3{
+.card > h3 {
   font-weight: 600;
+}
+
+
+@media only screen and (max-width: 375px) {
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .card{
+    /* margin-top: 20px; */
+  }
 }
